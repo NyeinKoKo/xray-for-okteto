@@ -112,10 +112,17 @@
 			{
 				"type": "field",
 				"domain": [
-					"domain:openai.com",
-					"domain:ai.com"
+					"geosite:openai",
+					"domain:sentry.io"
 				],
 				"outboundTag": "WARP"
+			},
+			{
+				"type": "field",
+				"domain": [
+					"geosite:speedtest"
+				],
+				"outboundTag": "blocked"
 			}
 		]
 	},
@@ -125,4 +132,4 @@
 			"8.8.4.4"
 		]
 	}
-}
+					}
